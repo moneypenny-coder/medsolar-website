@@ -984,3 +984,293 @@ html {
     background: var(--azul-med);
     color: var(--blanco);
 }
+/* PRODUCTOS AESTHETIC - NUEVO DISEÑO */
+.products-intro {
+    padding: 4rem 0;
+    background: var(--gris-claro);
+}
+
+.intro-box {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-box h2 {
+    color: var(--azul-med);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.intro-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gris-medio);
+    margin-bottom: 2rem;
+}
+
+.highlight-box {
+    background: linear-gradient(135deg, var(--azul-med) 0%, var(--azul-oscuro) 100%);
+    color: var(--blanco);
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(0,102,204,0.2);
+}
+
+.products-catalog {
+    padding: 5rem 0;
+}
+
+.product-category {
+    margin-bottom: 6rem;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-header h2 {
+    color: var(--azul-med);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.category-header p {
+    font-size: 1.15rem;
+    color: var(--gris-medio);
+    line-height: 1.7;
+}
+
+.products-modern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.product-modern-card {
+    background: var(--blanco);
+    border-radius: 25px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-modern-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--azul-med) 0%, var(--naranja-solar) 100%);
+}
+
+.product-modern-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border-color: var(--azul-med);
+}
+
+.product-modern-card.popular::before {
+    background: linear-gradient(90deg, var(--naranja-solar) 0%, var(--naranja-hover) 100%);
+}
+
+.product-modern-card.premium::before {
+    background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%);
+}
+
+.product-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: linear-gradient(135deg, var(--naranja-solar) 0%, var(--naranja-hover) 100%);
+    color: var(--blanco);
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(255,149,0,0.3);
+}
+
+.product-badge.premium-badge {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+    box-shadow: 0 4px 15px rgba(255,215,0,0.4);
+}
+
+.product-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--gris-claro);
+}
+
+.product-header h3 {
+    color: var(--azul-med);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.product-power {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--azul-med) 0%, var(--azul-oscuro) 100%);
+    color: var(--blanco);
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.product-specs {
+    margin-bottom: 2rem;
+}
+
+.spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+.spec-label {
+    color: var(--gris-medio);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.spec-value {
+    color: var(--gris-oscuro);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.product-guarantees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gris-claro);
+    border-radius: 15px;
+}
+
+.guarantee-item {
+    text-align: center;
+}
+
+.guarantee-item strong {
+    display: block;
+    color: var(--azul-med);
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.guarantee-item span {
+    display: block;
+    color: var(--gris-medio);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.product-cta {
+    width: 100%;
+    background: linear-gradient(135deg, var(--naranja-solar) 0%, var(--naranja-hover) 100%);
+    color: var(--blanco);
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255,149,0,0.3);
+}
+
+.product-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255,149,0,0.4);
+}
+
+/* CERTIFICACIONES */
+.certifications {
+    background: var(--gris-claro);
+    padding: 5rem 0;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.cert-item {
+    background: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.cert-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--azul-med) 0%, var(--azul-oscuro) 100%);
+    color: var(--blanco);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto 1.5rem;
+    font-weight: bold;
+}
+
+.cert-item h3 {
+    color: var(--azul-med);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.cert-item p {
+    color: var(--gris-medio);
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVE PARA PRODUCTOS */
+@media (max-width: 768px) {
+    .products-modern-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .category-header h2 {
+        font-size: 2rem;
+    }
+    
+    .product-header h3 {
+        font-size: 1.4rem;
+    }
+}
