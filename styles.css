@@ -492,3 +492,60 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* SERVICIOS */
+.services-intro {
+    padding: 3rem 0 1rem;
+}
+
+.services-main {
+    padding: 3rem 0 5rem;
+    background: var(--gris-claro);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+    color: var(--azul-med);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-card li {
+    padding: 0.5rem 0;
+    color: var(--gris-oscuro);
+}
+
+.process {
+    background: var(--blanco);
+}
