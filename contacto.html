@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Med Solar Valencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><span class="logo-main">MED SOLAR</span><br><span class="logo-sub">Valencia</span></div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte con tu proyecto solar</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="contact-item">
+                        <h3>📍 Dirección</h3>
+                        <p>Polígono Industrial<br>Valencia, España</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@medsolar.es">info@medsolar.es</a></p>
+                        <p><a href="mailto:ventas@medsolar.es">ventas@medsolar.es</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 Teléfono</h3>
+                        <p>+34 963 XXX XXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕐 Horario</h3>
+                        <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h2>Solicita Información</h2>
+                    <form class="contact-form" action="https://formspree.io/f/TU_ID_AQUI" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="presupuesto">Solicitar Presupuesto</option>
+                                <option value="informacion">Información de Productos</option>
+                                <option value="distribuidor">Ser Distribuidor</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Med Solar</h3>
+                    <p>Distribuidor profesional de paneles solares fotovoltaicos en el Levante español.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>Email: info@medsolar.es</p>
+                    <p>Valencia, España</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Med Solar - Heliodyne Iberia, S.A.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
