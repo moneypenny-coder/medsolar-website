@@ -549,3 +549,124 @@ section {
 .process {
     background: var(--blanco);
 }
+/* SOBRE NOSOTROS */
+.about-intro {
+    padding: 4rem 0;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--gris-oscuro);
+}
+
+.mission-vision {
+    background: var(--gris-claro);
+    padding: 5rem 0;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mission-card {
+    background: var(--blanco);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.mission-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mission-card h3 {
+    color: var(--azul-med);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.mission-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.mission-card li {
+    padding: 0.5rem 0;
+    color: var(--gris-oscuro);
+}
+
+.why-us {
+    padding: 5rem 0;
+}
+
+.our-commitment {
+    background: var(--gris-claro);
+    padding: 5rem 0;
+}
+
+.commitment-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.commitment-text h3 {
+    color: var(--azul-med);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.commitment-text h3:first-child {
+    margin-top: 0;
+}
+
+.commitment-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.location {
+    padding: 5rem 0;
+}
+
+.location-content {
+    max-width: 900px;
+    margin: 2rem auto 0;
+}
+
+.location-text h3 {
+    color: var(--azul-med);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.location-text h3:first-child {
+    margin-top: 0;
+}
+
+.location-text p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.location-text a {
+    color: var(--naranja-solar);
+    text-decoration: none;
+}
+
+.location-text a:hover {
+    text-decoration: underline;
+}
