@@ -1293,19 +1293,22 @@ section {
 
 .nav-menu li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-menu a {
-    text-decoration: none;
-    color: var(--gris-oscuro);
+.nav-menu li a {
+    text-decoration: none !important;
+    color: var(--gris-oscuro) !important;
     font-weight: 500;
     font-size: 0.95rem;
     transition: all 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
+    display: inline-block;
 }
 
-.nav-menu a::after {
+.nav-menu li a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1316,14 +1319,14 @@ section {
     transition: width 0.3s ease;
 }
 
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
+.nav-menu li a:hover::after,
+.nav-menu li a.active::after {
     width: 100%;
 }
 
-.nav-menu a:hover,
-.nav-menu a.active {
-    color: var(--azul-med);
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: var(--azul-med) !important;
 }
     
     .hero h1 {
