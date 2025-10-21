@@ -712,9 +712,10 @@ section {
         font-size: 1.5rem;
     }
     
-    .product-badge {
-        top: 1.5rem;
-        right: 1.5rem;
+   .product-badge {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
         padding: 0.5rem 1.2rem;
         font-size: 0.7rem;
     }
