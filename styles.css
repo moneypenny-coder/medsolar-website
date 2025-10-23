@@ -1382,3 +1382,23 @@ html {
     background-position: center;
     background-attachment: fixed;
 }
+/* IMÁGENES DE PRODUCTOS */
+.product-image {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--gris-claro);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-modern-card:hover .product-image img {
+    transform: scale(1.08);
+}
