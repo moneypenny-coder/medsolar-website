@@ -1402,3 +1402,13 @@ html {
 .product-modern-card:hover .product-image img {
     transform: scale(1.08);
 }
+/* FIX BOTÓN CTA */
+.cta {
+    position: relative;
+    z-index: 10;
+}
+
+.cta .btn {
+    pointer-events: auto;
+    cursor: pointer;
+}
