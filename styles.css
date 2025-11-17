@@ -1412,3 +1412,20 @@ html {
     pointer-events: auto;
     cursor: pointer;
 }
+/* FIX CTA BOTÓN NO CLICABLE */
+.cta {
+    position: relative;
+    z-index: 100;
+}
+
+.cta .container {
+    position: relative;
+    z-index: 101;
+}
+
+.cta .btn {
+    position: relative;
+    z-index: 102;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
